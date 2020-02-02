@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/84f9f8104b.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .clearfix {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .mobile {
+            display: none;
+        }
+
+        .wrap {
+            margin: 0 auto;
+            max-width: 1280px;
+            /* overflow: hidden; */
+
+        }
+
+        .wrap,
+        nav,
+        header {
+            height: 360px;
+        }
+
+        .desktop {
+            width: 300px;
+            float: left;
+            line-height: 72px;
+            font-size: 1.5rem;
+            background-color: rgba(46, 46, 46, 0.486);
+        }
+
+        header {
+            width: 100%;
+            /* float: left; */
+            background-image: url("pianino.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+
+
+        .desktop a {
+            display: block;
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.801);
+            text-transform: uppercase;
+            font-family: sans-serif;
+            padding: 0 5px 0 30px;
+        }
+
+        .desktop i:first-child {
+            color: rgb(238, 164, 53);
+        }
+
+        .desktop ul {
+            list-style: none;
+        }
+
+        .desktop i {
+            width: 60px;
+            border-right: 3px solid rgb(37, 37, 37);
+            margin-right: 45px;
+            transition: .3s;
+        }
+
+        .desktop a:hover i {
+            margin-right: 65px;
+            text-shadow: 5px 5px 10px;
+            color: rgb(255, 254, 170);
+        }
+
+        section {
+            clear: both;
+            box-shadow: 5px 5px 10px;
+        }
+
+        section h1 {
+            background-color: rgb(56, 56, 56);
+            color: white;
+            text-align: center;
+            font-family: sans-serif;
+            text-transform: uppercase;
+            line-height: 60px;
+            font-size: 40px;
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+        @media (max-width: 1000px) {
+            .desktop {
+                display: none;
+            }
+
+            .mobile {
+                display: block;
+                position: absolute;
+                top: 0;
+                left: 0;
+                /* width: 200px; */
+                /* float: left; */
+                line-height: 72px;
+                font-size: 1.5rem;
+            }
+
+            .mobile i {
+                color: rgb(238, 164, 53);
+                line-height: 65px;
+                transition: .5s;
+                /* width: 70px; */
+                padding: 0 27px;
+                /* background-color: cornflowerblue; */
+            }
+
+            .mobile i:hover {
+                text-shadow: 5px 5px 10px;
+                color: rgb(255, 254, 170);
+            }
+
+            .desktop a:hover i {
+                margin-right: 65px;
+                text-shadow: 5px 5px 10px;
+
+            }
+
+            .mobile a {
+                display: block;
+                text-decoration: none;
+                color: rgb(36, 36, 36);
+                text-transform: uppercase;
+                font-family: sans-serif;
+            }
+
+            header {
+                width: 100%;
+                /* float: left; */
+                background-image: url("pianino.jpg");
+                background-size: cover;
+                background-position: center;
+            }
+
+            .mobile a {
+                background-color: rgba(54, 54, 54, 0.671);
+                width: 85px;
+                color: rgba(255, 255, 255, 0.904);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <nav class="desktop">
+            <ul>
+                <li><a href="#"><i class="far fa-play-circle"></i>Start</a></li>
+                <li><a href="#"><i class="fas fa-coffee"></i>Oferta</a></li>
+                <li><a href="#"><i class="fas fa-blog"></i>Blog</a></li>
+                <li><a href="#"><i class="far fa-calendar-alt"></i>Terminarz</a></li>
+                <li><a href="#"><i class="fas fa-user-edit"></i>Kontakt</a></li>
+            </ul>
+        </nav>
+        <nav class="mobile">
+            <ul>
+                <li><a href="#"><i class="far fa-play-circle"></i></a></li>
+                <li><a href="#"><i class="fas fa-coffee"></i></a></li>
+                <li><a href="#"><i class="fas fa-blog"></i></a></li>
+                <li><a href="#"><i class="far fa-calendar-alt"></i></a></li>
+                <li><a href="#"><i class="fas fa-user-edit"></i></a></li>
+            </ul>
+        </nav>
+        <header></header>
+    </div>
+    <section>
+        <h1>Hello world</h1>
+    </section>
+</body>
+
+</html>
